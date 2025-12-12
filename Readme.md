@@ -4,24 +4,35 @@ Hybrid RL + convex-optimization framework for short-term cryptocurrency portfoli
 
 **Key idea:** an RL policy (PPO) proposes allocations which are projected to a feasible, risk-aware portfolio by a QP layer (OSQP/CVXPY). Includes reproducible backtests, walk-forward evaluation and overfitting rejection tests.
 
-## Repo structure
-project-root/
-├─ README.md
-├─ LICENSE
-├─ requirements.txt
-├─ environment.yml
-├─ setup.py
-├─ data/
-│ └─ raw/
-├─ notebooks/
-├─ src/
-│ ├─ data/
-│ ├─ envs/
-│ ├─ rl/
-│ ├─ opt/
-│ └─ backtest/
-├─ experiments/
-└─ tests/
+## Repository structure
+
+- **project-root/**
+  - `README.md`
+  - `LICENSE`
+  - `requirements.txt`
+  - `environment.yml`
+  - `setup.py`
+  - **data/**
+    - `raw/`
+  - **notebooks/**
+  - **src/**
+    - **data/**
+      - `loader.py`
+      - `clean.py`
+      - `features.py`
+    - **envs/**
+      - `portfolio_env.py`
+    - **rl/**
+      - `ppo.py`
+      - `agent.py`
+      - `trainer.py`
+    - **opt/**
+      - `optimizer_interface.py`
+      - `solvers.py`
+    - **backtest/**
+      - `backtester.py`
+  - **experiments/**
+  - **tests/**
 
 
 ## Quick start (development)
