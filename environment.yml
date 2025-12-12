@@ -1,0 +1,24 @@
+name: hybrid-rl
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
+  - matplotlib>=3.7
+  - pyarrow
+  - pytorch>=2.0
+  - cpuonly    # choose cudatoolkit=12.1 for GPU builds and remove cpuonly
+  - pip
+  - pip:
+    - gymnasium>=0.28
+    - osqp
+    - cvxpy
+    - ruamel.yaml
+    - tqdm
+    - seaborn
+    - plotly
+    - scikit-learn
+    - pytest

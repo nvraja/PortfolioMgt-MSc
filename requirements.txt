@@ -1,0 +1,24 @@
+# Core
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+pyarrow>=12.0
+
+# RL / DL
+torch>=2.0
+gymnasium>=0.28
+
+# Optimization & CVX
+osqp>=0.6
+cvxpy>=1.4
+
+# Utilities
+tqdm
+ruamel.yaml
+pytest
+
+# Data analysis (backtest / metrics / plotting)
+seaborn
+plotly
+scikit-learn
